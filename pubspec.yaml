@@ -1,0 +1,97 @@
+name: app_tracker_attendance
+description: "Red Attendance — تطبيق تتبع الحضور والانصراف"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.2
+  sqflite: ^2.4.2
+  shared_preferences: ^2.5.3
+  path: ^1.9.0
+  intl: ^0.20.2
+  avatar_glow: ^3.0.1
+  csv: ^6.0.0
+  path_provider: ^2.1.5
+  share_plus: ^11.0.0
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  flutter_svg: ^2.1.0
+  file_picker: ^10.1.9
+  flutter_native_splash: ^2.4.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  app_name: "Red Attendance"
+  ios: true
+  image_path_ios: "assets/icons/ic_launcher.png"
+  remove_alpha_ios: true
+  android: "launcher_icon"
+  image_path_android: "assets/icons/ic_launcher.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#C0392B"
+  adaptive_icon_foreground: "assets/icons/ic_launcher_foreground.png"
+  adaptive_icon_monochrome: "assets/icons/ic_launcher_monochrome.png"
+  web:
+    generate: true
+    image_path: "assets/icons/ic_launcher.png"
+    background_color: "#C0392B"
+    theme_color: "#C0392B"
+  windows:
+    generate: true
+    image_path: "assets/icons/ic_launcher.png"
+
+flutter_native_splash:
+  color: "#F8F9FA"
+  image: "assets/icons/red_attendance_icon.png"
+  color_dark: "#F8F9FA"
+  image_dark: "assets/icons/red_attendance_icon.png"
+  android_12:
+    color: "#F8F9FA"
+    image: "assets/icons/red_attendance_icon.png"
+    color_dark: "#F8F9FA"
+    image_dark: "assets/icons/red_attendance_icon.png"
+  android_gravity: center
+  ios_content_mode: center
+  web: false
+  fullscreen: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/static/
+  fonts:
+    - family: Alexandria
+      fonts:
+        - asset: assets/static/Alexandria-Thin.ttf
+          weight: 100
+        - asset: assets/static/Alexandria-ExtraLight.ttf
+          weight: 200
+        - asset: assets/static/Alexandria-Light.ttf
+          weight: 300
+        - asset: assets/static/Alexandria-Regular.ttf
+          weight: 400
+        - asset: assets/static/Alexandria-Medium.ttf
+          weight: 500
+        - asset: assets/static/Alexandria-SemiBold.ttf
+          weight: 600
+        - asset: assets/static/Alexandria-Bold.ttf
+          weight: 700
+        - asset: assets/static/Alexandria-ExtraBold.ttf
+          weight: 800
+        - asset: assets/static/Alexandria-Black.ttf
+          weight: 900
